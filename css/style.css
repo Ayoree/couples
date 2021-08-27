@@ -6,6 +6,7 @@ img.profile-link {
 }
 img.avatar {
     object-fit: cover;
-    height: 200px;
+    height: 250px;
+    min-width: 190px;
     box-shadow: 0 0 2px rgb(105, 105, 105);
 }
