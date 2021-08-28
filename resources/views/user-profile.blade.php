@@ -1,58 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
+@extends('layouts.main-layout')
+@section('title')
+    Профиль
+@endsection
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <!-- HEADER -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
-            <li class="nav-item dropdown d-sm-none mx-auto">
-                <a class="nav-link dropdown-toggle link-light stretched-link pt-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Навигация
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark align-items-center" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Расписание</a></li>
-                  <li><a class="dropdown-item" href="#">Чат<span class="ms-1 badge rounded-pill bg-info">37</span></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Профиль</a></li>
-                </ul>
-              </li>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Расписание</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Чат
-                            <span class="badge rounded-pill bg-info">37</span>
-                        </a>
-                    </li>
-                </ul>
-                <li class="d-flex nav-item">
-                    <a href="#">
-                        <img src="img/avatar.jpg" class="profile-link" alt="...">
-                    </a>
-                </li>
-            </div>
-        </div>
-    </nav>
-    <!-- !HEADER -->
+@section('content')
     <div class="container mt-4">
         <div class="row">
             <div class="col-6 col-sm-5 col-md-4 col-lg-3">
-                <img src="img/avatar.jpg" class="avatar img-fluid rounded" alt="...">
+                <img src="../resources/img/avatar.jpg" class="avatar img-fluid rounded" alt="...">
                 <button class="btn btn-primary mt-2 p-1 w-100">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
@@ -93,8 +48,4 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-</body>
-
-</html>
+@endsection

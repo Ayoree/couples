@@ -1,0 +1,49 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.badge {
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+img.profile-link {
+    object-fit: cover;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+img.avatar {
+    object-fit: cover;
+    height: 150px;
+    min-width: 120px;
+    box-shadow: 0 0 2px rgb(105, 105, 105);
+}
+
+.next-class-head {
+    padding: 8px 8px;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0;
+    background-color:rgb(223, 230, 255);
+}
+.next-class-content {
+    padding: 8px;
+    background-color:rgb(236, 236, 255);
+}
+
+@media screen and (min-width: 576px) {
+    img.avatar {
+        object-fit: cover;
+        height: 250px;
+        min-width: 190px;
+        box-shadow: 0 0 2px rgb(105, 105, 105);
+    }
+}
+@media screen and (min-width: 768px) {
+    .next-class-head {
+        letter-spacing: 0.25em;
+        font-size: 1.15em;
+        border: none;
+    }
+}
