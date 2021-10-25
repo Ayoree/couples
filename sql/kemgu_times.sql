@@ -47,3 +47,10 @@ INSERT INTO `times` (`number_of_class`, `start`, `end`, `saturday_start`, `satur
 (5, '16:00:00', '17:35:00', '16:00:00', '17:35:00'),
 (6, '17:45:00', '19:20:00', '17:45:00', '19:20:00'),
 (7, '19:30:00', '21:05:00', '19:30:00', '21:05:00');
+
+--
+-- Индексы таблицы `times`
+--
+ALTER TABLE `times`
+  ADD PRIMARY KEY (`number_of_class`);
+COMMIT;

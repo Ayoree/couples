@@ -235,13 +235,6 @@ INSERT INTO `пс-982` (`day`, `number`, `is_odd_even`, `is_groups`, `class`, `c
 -- Индексы сохранённых таблиц
 --
 
---
--- Индексы таблицы `times`
---
-ALTER TABLE `times`
-  ADD PRIMARY KEY (`number_of_class`);
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
